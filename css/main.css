@@ -1,0 +1,89 @@
+body {
+    padding-top: 50px;
+    background-color: #f0ebe8;
+    color: #4C4C4C;
+}
+
+a {
+    color: #f0ebe8;
+}
+
+a:hover {
+    color: #f0ebe8;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.navbar-inverse {
+    background-color: #00ADEF;
+    color: #f0ebe8;
+    border: none;
+}
+
+.navbar-inverse input {
+    color: #4b4f75;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #f0ebe8;
+}
+
+#dashboard {
+    margin-top: 20px;
+}
+
+#addFramework {
+    margin-top: 10px;
+    text-align: right;
+}
+
+#chartDiv {
+    height: 600px
+}
+
+h2 span {
+    font-size: 15px;
+    vertical-align: top;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li span {
+    line-height: 2em;
+    font-weight: bold;
+}
+
+#addRow {
+    margin: 5px;
+}
+
+#refreshNow,
+#refreshChart {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #4b4f75;
+}
+
+#updates {
+    color: #4b4f75;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4C4C4C;
+    color: #f0ebe8;
+}

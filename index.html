@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Framework Wars</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/main.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Framework Wars</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <div id="addFramework" class="col-xs-9 col-xs-offset-1">
+          <div class="col-xs-6">
+            <p>Add more GitHub repos! for example: <a href="https://github.com/jashkenas/backbone">Backbone</a></p>
+          </div>
+          <div class="col-xs-6">
+            <input id="newURL" type="text" class="col-xs-10" placeholder="GitHub URL">
+            <span id="addRow" class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+          </div>
+        </div>
+        <ul class="nav navbar-nav">
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- Main Container -->
+  <div id="dashboard" class="container">
+    <!-- Stats Table -->
+    <div class="col-xs-6">
+      <h2>Github Activity Stats <span id="refreshNow" class="glyphicon glyphicon-refresh" aria-hidden="true"></span></h2>
+      <p>Last update: <span id="updateTime">00:00</span></p>
+    </div>
+    <div id="contents" class="col-xs-12">
+      <div class="col-xs-12">
+        <table id="table_id" class="display">
+          <thead>
+            <tr>
+              <th>Framework</th>
+              <th>Watchers</th>
+              <th>Forks</th>
+              <th>Issues</th>
+              <th>Subscribers</th>
+              <th>Size</th>
+              <th>Update</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Chart Magic -->
+    <div id="chartDiv" class="col-xs-12">
+      <h2>Chart</h2>
+      <!-- <span id="refreshChart" class="glyphicon glyphicon-refresh" aria-hidden="true"></span> -->
+      <select id="chartSelect" class="form-control">
+        <option>watchers</option>
+        <option>forks</option>
+        <option>open_issues</option>
+        <option>subscribers_count</option>
+        <option>size</option>
+      </select>
+      <canvas id="myChart" width="850" height="400"></canvas>
+    </div>
+  </div>
+  <div id="footer" class="col-xs-12">
+    Framework Wars
+  </div>
+  <!-- /.container -->
+  <!-- Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Table Library -->
+  <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <!-- Chart Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+  <!-- Micro Library to turn numbers into file size string  -->
+  <script src="https://cdn.filesizejs.com/filesize.min.js"></script>
+  <script src="./js/table.js"></script>
+  <script src="./js/chart.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
