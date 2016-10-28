@@ -1,4 +1,5 @@
 ##Frameworks Wars
+Live Demo: https://giocodes.github.io/FrameworkWars/
 
 This tool is an excellent way to compare stats, available through GitHub API, on different front-end frameworks.
 
@@ -15,11 +16,15 @@ chart.js - initialization and methods for the chart
 
 I've included some comments throughout the source files as well.
 
+Features: 
+* Display Github Stats for Angular, React, Vue and Ember
+* Add extra GitHub repositories URL to the comparison
+* Table: sort, filter, add and remove repositories
+* Chart: select from watchers, forks, open issues, subscribers and size
+
 The libraries used for this project are:
 Bootstrap + jQuery
 DataTables
-Chart.js
+and Chart.js
 
-Overall I had a lot of fun with this challenge, deciding on a framework might require more consideration than what this statistics can offer, but I sure hope this will help you in your decision. 
-
-
+Overall I had a lot of fun with this challenge, deciding on a framework might require more consideration than what this statistics can offer, but I sure hope this will help you in your decision.
