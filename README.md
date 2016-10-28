@@ -18,7 +18,7 @@ I've included some comments throughout the source files as well.
 The libraries used for this project are:
 Bootstrap + jQuery
 DataTables
-Chart.js
+and Chart.js
 
 Overall I had a lot of fun with this challenge, deciding on a framework might require more consideration than what this statistics can offer, but I sure hope this will help you in your decision. 
 
