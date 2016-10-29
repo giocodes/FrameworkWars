@@ -9,7 +9,7 @@ During the planning phase, I spend some time on figuring out the best way to con
 
 As I'm using Bootstrap to speed up the layout of the UX, I leveraged on jQuery mainly for selecting DOM elements. 
 
-The tool is broken down into files according to their features:
+The tool is organized into files according to their features:
 main.js - main controller
 table.js - initialization and methods for the table
 chart.js - initialization and methods for the chart
